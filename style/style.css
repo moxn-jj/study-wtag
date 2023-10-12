@@ -1,0 +1,31 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css);
+
+body{font-family: 'NanumSquare', sans-serif;}
+
+/* common */
+.inner-container{margin: 0 auto;width: 970px;}
+.clear::after{content: '';display: block;clear: both;}
+
+/* header */
+/* flex 방식 */
+/* .header{display: flex;justify-content: space-between;align-items: center;margin: 0 auto;width: 970px;} */
+.header{padding: 15px 0;}
+.header .logo-area{float: left;}
+.header .logo-area .logo{width: 133px;}
+.header .lan-area{float: right;padding: 5px 12px;border: 1px solid #777;}
+.header .lan-area .korea:before{content: '';display: inline-block;margin-right: 8px;width: 20px;height: 13px;background-image: url(../img/lang.png);vertical-align: middle;}
+.header .lan-area .korea{font-size: 13px;color: #777;letter-spacing: 1px;}
+
+/* nav */
+.nav{background-color: #11524f;}
+.nav .menu-list{text-align: right;padding: 12px;}
+.nav .menu{display: inline-block;color: #fff;border-bottom: 2px solid rgba(255,196,68,0);transition: 0.5s border-bottom-color;} 
+.nav .menu:hover{border-bottom-color: rgba(255,196,68,1);}
+.nav .menu.active{color: rgba(255,196,68,1);}
+.nav .menu.home:before{content: '';display: inline-block;margin-right: -13px;background-image: url(../img/icon_home.png);width: 16px;height: 16px;background-size: cover;vertical-align: middle;}
+.nav .menu .link{display: inline-block;padding: 9px 18px;}
+
+/* main */
+.main{}
+
+/* footer */
