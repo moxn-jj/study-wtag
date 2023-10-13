@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>우양코퍼레이션</title>
+    <link rel="shortcut icon" href="./imgs/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -40,89 +41,90 @@
                     </div>
                     <form action="">
                         <div class="inq-info-area">
-                            <div class="inq-info">
-                                <label for="category" class="tit">문의유형</label>
-                                <select name="category" id="category">
+                            <div class="inq-info clear">
+                                <label for="category" class="tit"> · 문의유형</label>
+                                <select name="category" id="category" class="inp">
                                     <option value="설치신청">설치신청</option>
                                     <option value="제휴문의">제휴문의</option>
                                     <option value="기타">기타</option>
                                 </select>
                             </div>
-                            <div class="inq-info">
-                                <label for="user-name" class="tit">이름</label>
-                                <input type="text" id="user-name" class="inp" placeholder="이름을 입력하세요">
+                            <div class="inq-info clear">
+                                <label for="user-name" class="tit"> · 이름</label>
+                                <input type="text" name="user-name" id="user-name" class="inp" placeholder="이름을 입력하세요">
                             </div>
-                            <div class="inq-info">
-                                <label for="user-contact" class="tit">연락처</label>
-                                <input type="text" id="user-contact" class="inp" placeholder="연락처를 입력하세요">
+                            <div class="inq-info clear">
+                                <label for="user-contact" class="tit"> · 연락처</label>
+                                <input type="text" name="user-contact" id="user-contact" class="inp" placeholder="연락처를 입력하세요">
                             </div>
-                            <div>
-                                <div class="inq-info">
-                                    <label for="user-email" class="tit">이메일</label>
-                                    <input type="email" id="user-email" class="inp" placeholder="이메일을 입력하세요">
+                            <div class="inq-info-couple clear">
+                                <div class="inq-info clear">
+                                    <label for="user-email" class="tit"> · 이메일</label>
+                                    <input type="email" name="user-email" id="user-email" class="inp" placeholder="이메일을 입력하세요">
                                 </div>
-                                <div class="inq-info">
-                                    <label for="locate" class="tit">지역</label>
-                                    <input type="text" id="locate" class="inp" placeholder="지역만 입력하세요. 예) 경기도 부천시 원미구">
+                                <div class="inq-info clear">
+                                    <label for="locate" class="tit"> · 지역</label>
+                                    <input type="text" name="locate" id="locate" class="inp" placeholder="지역만 입력하세요. 예) 경기도 부천시 원미구">
                                 </div>
                             </div>
-                            <div class="inq-info">
-                                <label for="inq-contents" class="tit">문의사항</label>
-                                <textarea id="inq-contents">
-                                    ※ 설치시 필요한 정보
+                            <div class="inq-info clear">
+                                <label for="inq-contents" class="tit"> · 문의사항</label>
+                                <textarea name="inq-contents" id="inq-contents" class="inp">
+※ 설치시 필요한 정보
 
-                                    축사의 크기 (예>5*10, 4.5*8) : 
-                                    와이파이의 유무 : 
-                                    축사와 인가와의 거리 : 
-                                    사육두수/우방 수 :
+축사의 크기 (예>5*10, 4.5*8) : 
+와이파이의 유무 : 
+축사와 인가와의 거리 : 
+사육두수/우방 수 :
                                 </textarea>
                             </div>
-                            <div class="inq-info">
-                                <label for="inq-file" class="tit">첨부파일</label>
+                            <div class="inq-info clear">
+                                <label for="inq-file" class="tit"> · 첨부파일</label>
                                 <div class="attach-area">
-                                    <input type="file" id="inq-file">
-                                    <p>최대 1개의 파일을 첨부할 수 있으며, 파일크기는 100MB보다 작아야 합니다.</p>
+                                    <input type="file" name="inq-file" id="inq-file">
+                                    <div class="file-preview"><span class="file-name"></span></div>
+                                    <p class="file-desc">최대 1개의 파일을 첨부할 수 있으며, 파일크기는 100MB보다 작아야 합니다.</p>
                                 </div>
-                                <button type="button">파일찾기</button>
+                                <label for="inq-file" class="btn-file">파일찾기</label>
                             </div>
                             <div class="inq-info">
-                                <label for="policy-terms" class="tit">개인정보 수집 및 이용</label>
-                                <textarea id="policy-terms">
-                                    &lt; 개인정보취급방침약관 &gt;
-                                    주식회사 우양코퍼레이션은 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」, 「개인정보 보호법」을 비롯한 개인정보 관련 법령을 준수하고 있습니다. 처리한 개인정보는 동의하신 목적과 범위 내에서만 이용되며, 별도의 동의 없이 제3자에게 제공되거나 명시된 목적이외의 용도로는 사용되지 않으며 이용 목적이 변경될 시에는 사전동의를 구할 예정입니다. 또한 기본적 인권 침해의 우려가 있는 민감한 개인정보는 수집하지 않습니다. 주식회사 우양코퍼레이션은 회사의 개인정보처리방침을 개정하는 경우 웹사이트 공지사항을 통하여 공지할 것입니다.
-                                    1. 수집항목 및 수집방법
-                                    ① 필수 항목: 서비스를 위한 정보 
-                                    ㄱ. 디바이스 정보: 디바이스번호, 스캐너번호
-                                    ㄴ. 개체의 정보: 개체 번호
-                                    ㄷ. 설치를 위한 정보: 축사의 정보
-                                    ② 추가 항목: 카메라 정보
-                                    ③ 수집 방법: 디바이스와 스캐너를 통한 자동수집, 어플을 통한 개체 정보, 직접적인 연락을 통한 정보수집 
-                                    2. 이용목적
-                                    회원 로그인의 기본적인 서비스 제공을 위하여 필수 항목을 수집합니다. 서비스 제공에 필요한 정보를 위하여 연락이 가능한 연락처를 수집하며 개체(축우)의 정보와 축사의 정보, 추가 항목 등을 목적으로 개인정보를 처리합니다.
-                                    3. 보유기간 및 파기방법
-                                    주식회사 우양코퍼레이션은 법령에 따른 개인정보 보유이용기간 또는 정보주체로부터 개인정보를 수집시에 필수 항목의 경우 서비스 시작일로부터 서비스 탈퇴일까지 보유하며 그 후 파기하고 있습니다. 추가 항목의 경우 고객이 서비스 이용을 완료할 때까지 활용되며, 개체 정보의 경우 자사의 연구자료로 활용될 수 있습니다. 단, 필수 항목은 법령에 의해 보존해야만 하는 경우 또는 서비스 관련 분쟁 방지를 위하여 각각의 개인정보 처리 및 보유 기간을 다음과 같이 명시합니다.
-                                    ① &lt;재화 또는 서비스 제공&gt;과 관련한 필수정보: 수집이용에 관한 동의일로부터 탈퇴일까지
-                                    ② 서비스 방문기록, 접속로그: 통신비밀보호법, 3개월 
-                                    ③ 서비스 이용 관련 기록: 서비스 관리목적, 1년 
+                                <label for="policy-terms" class="tit"> · 개인정보 수집 및 이용</label>
+                                <textarea name="policy-terms" id="policy-terms" class="inp" readonly>
+&lt; 개인정보취급방침약관 &gt;
+주식회사 우양코퍼레이션은 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」, 「개인정보 보호법」을 비롯한 개인정보 관련 법령을 준수하고 있습니다. 처리한 개인정보는 동의하신 목적과 범위 내에서만 이용되며, 별도의 동의 없이 제3자에게 제공되거나 명시된 목적이외의 용도로는 사용되지 않으며 이용 목적이 변경될 시에는 사전동의를 구할 예정입니다. 또한 기본적 인권 침해의 우려가 있는 민감한 개인정보는 수집하지 않습니다. 주식회사 우양코퍼레이션은 회사의 개인정보처리방침을 개정하는 경우 웹사이트 공지사항을 통하여 공지할 것입니다.
+1. 수집항목 및 수집방법
+① 필수 항목: 서비스를 위한 정보 
+ㄱ. 디바이스 정보: 디바이스번호, 스캐너번호
+ㄴ. 개체의 정보: 개체 번호
+ㄷ. 설치를 위한 정보: 축사의 정보
+② 추가 항목: 카메라 정보
+③ 수집 방법: 디바이스와 스캐너를 통한 자동수집, 어플을 통한 개체 정보, 직접적인 연락을 통한 정보수집 
+2. 이용목적
+회원 로그인의 기본적인 서비스 제공을 위하여 필수 항목을 수집합니다. 서비스 제공에 필요한 정보를 위하여 연락이 가능한 연락처를 수집하며 개체(축우)의 정보와 축사의 정보, 추가 항목 등을 목적으로 개인정보를 처리합니다.
+3. 보유기간 및 파기방법
+주식회사 우양코퍼레이션은 법령에 따른 개인정보 보유이용기간 또는 정보주체로부터 개인정보를 수집시에 필수 항목의 경우 서비스 시작일로부터 서비스 탈퇴일까지 보유하며 그 후 파기하고 있습니다. 추가 항목의 경우 고객이 서비스 이용을 완료할 때까지 활용되며, 개체 정보의 경우 자사의 연구자료로 활용될 수 있습니다. 단, 필수 항목은 법령에 의해 보존해야만 하는 경우 또는 서비스 관련 분쟁 방지를 위하여 각각의 개인정보 처리 및 보유 기간을 다음과 같이 명시합니다.
+① &lt;재화 또는 서비스 제공&gt;과 관련한 필수정보: 수집이용에 관한 동의일로부터 탈퇴일까지
+② 서비스 방문기록, 접속로그: 통신비밀보호법, 3개월 
+③ 서비스 이용 관련 기록: 서비스 관리목적, 1년 
 
-                                    4. 개인정보 자동수집장치의 설치, 운영 및 거부에 관한 사항
-                                    디바이스 정보는 주민등록번호 등 직접적인 개인식별정보를 수집하지 않습니다. 위태그(W-TAG)는 별도의 앱을 통해 회원가입 없이 고객 센터로부터 부여 받은 아이디로 로그인 시 디바이스 정보를 확인할 수 있습니다. Wichi®는 중복가입을 막을 수 있는 수단으로 이메일을 수집하고 있습니다.
-                                    5. 개인정보의 취급 위탁
-                                    주식회사 우양코퍼레이션은 고객지원 및 서비스 제공을 위한 개인정보 처리 업무를 외부 업체에 위탁하여 운영하고 있지 않습니다.
-                                    6. 개인정보의 제3자에 대한 제공
-                                    주식회사 우양코퍼레이션은 회원의 개인정보를 이용하여 제3자에게 제공 또는 공유하지 않습니다.
-                                    7. 개인정보취급방침의 변경
-                                    주식회사 우양코퍼레이션은 법률이나 서비스의 변경사항을 반영하기 위한 목적 등으로 개인정보취급방침을 변경할 수 있습니다. 이 경우 변경 사항을 게시하며, 변경된 개인정보 취급방침은 게시한 날로부터 7일 후부터 효력이 발생합니다.
-                                    8. 개인정보의 기술적, 관리적 보호대책
+4. 개인정보 자동수집장치의 설치, 운영 및 거부에 관한 사항
+디바이스 정보는 주민등록번호 등 직접적인 개인식별정보를 수집하지 않습니다. 위태그(W-TAG)는 별도의 앱을 통해 회원가입 없이 고객 센터로부터 부여 받은 아이디로 로그인 시 디바이스 정보를 확인할 수 있습니다. Wichi®는 중복가입을 막을 수 있는 수단으로 이메일을 수집하고 있습니다.
+5. 개인정보의 취급 위탁
+주식회사 우양코퍼레이션은 고객지원 및 서비스 제공을 위한 개인정보 처리 업무를 외부 업체에 위탁하여 운영하고 있지 않습니다.
+6. 개인정보의 제3자에 대한 제공
+주식회사 우양코퍼레이션은 회원의 개인정보를 이용하여 제3자에게 제공 또는 공유하지 않습니다.
+7. 개인정보취급방침의 변경
+주식회사 우양코퍼레이션은 법률이나 서비스의 변경사항을 반영하기 위한 목적 등으로 개인정보취급방침을 변경할 수 있습니다. 이 경우 변경 사항을 게시하며, 변경된 개인정보 취급방침은 게시한 날로부터 7일 후부터 효력이 발생합니다.
+8. 개인정보의 기술적, 관리적 보호대책
                                 </textarea>
-                                <p>※ 귀하께서는 개인정보 수집 · 이용에 대한 동의를 거부하실 수 있으나, 서비스 제공에 필수적으로 제공되어야하는 정보이므로, 동의를 거부하실 경우 문의하실 수 없습니다.</p>
+                                <p class="policy-desc">※ 귀하께서는 개인정보 수집 · 이용에 대한 동의를 거부하실 수 있으나, 서비스 제공에 필수적으로 제공되어야하는 정보이므로, 동의를 거부하실 경우 문의하실 수 없습니다.</p>
                                 <div class="agree-area">
                                     <input type="checkbox" name="" id="agree-chk">
                                     <label for="agree-chk">본인은 위 개인정보 수집 및 이용에 동의합니다.</label>
                                 </div>
                             </div>
                         </div>
-                        <button class="submit">등록</button>
+                        <div class="full-btn-area"><button type="submit" class="btn-reg">등록</button></div>
                     </form>
                 </section>
             </div>
@@ -130,6 +132,10 @@
         <footer class="footer">
             <div class="partner-info">
                 <div class="inner-container">
+                    <div>
+                        <p class="policy"><span class="copyright">Copyright © Wuyang 2020</span><a href="http://wtag.co.kr/privacy.php" class="privacy-policy">개인정보취급방침</a></p>
+                        <p class="phone-inq">전화문의 063)236-0477</p>
+                    </div>
                     <ul class="partner-list">
                         <li class="partner"><img src="./imgs/partner_01.png" alt="농업기술실용화재단"></li>
                         <li class="partner"><img src="./imgs/partner_02.png" alt="연구개발특구진흥재단"></li>
@@ -137,8 +143,6 @@
                         <li class="partner"><img src="./imgs/partner_04.png" alt="HYU Holdings"></li>
                         <li class="partner"><img src="./imgs/partner_05.png" alt="전남창조경제혁신센터"></li>
                     </ul>
-                    <p class="policy"><span class="copyright">Copyright © Wuyang 2020</span><a href="http://wtag.co.kr/privacy.php" class="privacy-policy">개인정보취급방침</a></p>
-                    <p class="phone-inq">전화문의 063)236-0477</p>
                 </div>
             </div>
             <div class="inner-container">
@@ -150,7 +154,7 @@
                     </div>
                 </div>
                 <div class="contact-info">
-                    <p class="phone-tit"><div>전화</div><div>문의</div></p>
+                    <p class="phone-tit"><span>전화</span><span>문의</span></p>
                     <p class="phone-number">063-236-0477</p>
                     <a href="https://www.facebook.com/wuyangcorp/" class="share-icon"><img src="./imgs/icon_facebook.png" alt="facebook"></a>
                     <a href="https://www.instagram.com/wuyang_sales/" class="share-icon"><img src="./imgs/icon_insta.png" alt="instagram"></a>
@@ -159,5 +163,22 @@
             </div>
         </footer>
     </div>
+    <script>
+
+        // 파일명 미리보기
+        const fileInput = document.querySelector('#inq-file');
+        const fileNameDisplay = document.querySelector('.file-preview .file-name');
+        fileInput.addEventListener('change', function() {
+            const selectedFile = fileInput.files[0];
+
+            if (!selectedFile) {
+                fileNameDisplay.textContent = '';
+                return;
+            }
+
+            fileNameDisplay.textContent = `선택한 파일: ${selectedFile.name}`;
+        });
+
+    </script>
 </body>
 </html>
