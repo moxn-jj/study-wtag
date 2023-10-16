@@ -27,10 +27,10 @@ body{font-family: 'NanumSquare', sans-serif;}
 
 /* main */
 .main{padding-bottom: 100px;}
-.main .inq-noti{margin: 100px 0 80px;}
-.main .inq-noti .tit{padding-bottom: 30px;font-size: 32px;color: #444;text-align: center;}
-.main .inq-noti .desc{font-size: 20px;color: #333;text-align: center;}
-.main .inq-noti .cs{padding-top: 10px;font-size: 32px;color: #838383;text-align: center;}
+.main .inq-noti{display: flex;align-items: center; margin: 100px 0 80px;}
+.main .inq-noti .tit{padding-bottom: 30px;font-size: 32px;color: #444;}
+.main .inq-noti .desc{font-size: 20px;color: #333;}
+.main .inq-noti .cs{padding-top: 10px;font-size: 32px;color: #838383;}
 
 .main .inq-info-area{padding: 20px 0;border-top: 1px solid #dadada;border-bottom: 1px solid #dadada;}
 .main .inq-info .tit{font-size: 15px;color: #0e8881;line-height: 38px;}
